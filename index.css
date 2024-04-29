@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #1B244A;    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    --home-color: white;    
+    --guest-color: white;    
+}
+
+#home {
+    color: var(--home-color);
+}
+
+#guest {
+    color: var(--guest-color);
+}
+
+.team {
+    text-align: center;    
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px auto; 
+}
+
+.scores {
+    color: #F94F6D;
+    text-align: center;
+    font-size: 90px;
+    background-color: #080001;
+    font-family: CursedTimer;
+    width: 120px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@font-face {
+    src: url("CursedTimerUlil.ttf");
+    font-family: CursedTimer;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around
+}
+
+.btn {
+    color: #9AABD8;
+    background-color: transparent;
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    margin: 25px 0;
+    width: 45px;
+    height: 45px;
+    font-family: CursedTimer;    
+}
+
+#new_game {
+    display: block;
+    margin: 50px auto;
+    width: 100px;
+    color: green;
+    border: 2px solid green;
+}
