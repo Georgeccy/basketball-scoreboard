@@ -1,18 +1,30 @@
+:root{
+    --home-color: white;    
+    --guest-color: white;
+    --prime-color: white;    
+    --highlight-color: red;
+}
+
 body {
     margin: 0;
     background-color: #1B244A;    
+    font-family: CursedTimer;    
+    max-width: 1000px;    
+    margin: 0 auto;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    --home-color: white;    
-    --guest-color: white;    
 }
+
+/* .panel {
+} */
 
 #home {
     color: var(--home-color);
 }
+
 
 #guest {
     color: var(--guest-color);
@@ -30,7 +42,6 @@ body {
     text-align: center;
     font-size: 90px;
     background-color: #080001;
-    font-family: CursedTimer;
     width: 120px;
     padding: 0 20px;
     margin: 0 auto;
@@ -57,10 +68,25 @@ body {
     font-family: CursedTimer;    
 }
 
-#new_game {
+.btn:hover {
+    border-color: var( --prime-color);
+    color: var( --prime-color) ;
+}
+
+.new-game {
     display: block;
     margin: 50px auto;
     width: 100px;
     color: green;
     border: 2px solid green;
+}
+
+.new-game:hover {
+    border-color: var( --highlight-color);
+    color: var( --highlight-color);
+}
+
+#message {
+    color: var( --prime-color);
+    text-align: center;
 }

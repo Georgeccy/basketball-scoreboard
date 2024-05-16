@@ -1,32 +1,32 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="container" id="panels">
-            <div>
+            <div class="panel">
                 <h3 id="home" class="team">HOME</h3>
                 <p id="home-scores" class="scores">0</p>
                 <div class="btn-group">
-                    <button class="btn" onclick="homePlus1()">+1</button>
-                    <button class="btn" onclick="homePlus2()">+2</button>
-                    <button class="btn" onclick="homePlus3()">+3</button>
+                    <button class="btn" onclick="update('home', 1)">+1</button>
+                    <button class="btn" onclick="update('home', 2)">+2</button>
+                    <button class="btn" onclick="update('home', 3)">+3</button>
                 </div>
             </div>
-            <div>
-                <h3 id="guest" class="team">Guest</h3>
+            <div class="panel">
+                <h3 id="guest" class="team">GUEST</h3>
                 <p id="guest-scores" class="scores">0</p>
                 <div class="btn-group">
-                    <button class="btn" onclick="guestPlus1()">+1</button>
-                    <button class="btn" onclick="guestPlus2()">+2</button>
-                    <button class="btn" onclick="guestPlus3()">+3</button>
+                    <button class="btn" onclick="update('guest', 1)">+1</button>
+                    <button class="btn" onclick="update('guest', 2)">+2</button>
+                    <button class="btn" onclick="update('guest', 3)">+3</button>
                 </div>
             </div>
         </div>
         <div>
-            <button class="btn" id="new_game" onclick="newGame()">New Game</button>
+            <button class="btn new-game" id="new-game" onclick="newGame()">New Game</button>
+            <p id="message">Press any "+" button to start!<p>
         </div>
         <script src="index.js"></script>
     </body>
